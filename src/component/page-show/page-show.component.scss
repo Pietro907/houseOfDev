@@ -1,0 +1,100 @@
+@use "../../styles.scss";
+
+.container_show_card {
+    position: relative;
+    * {
+        color: styles.$text-wh;
+    }
+    & .img_project {
+        width: 600px;
+        height: 350px;
+        border: 10px solid styles.$secondary-color;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        border-radius: 15px;
+    }
+    & .astronaut {
+        width: 600px;
+        height: 600px;
+        border-bottom: 10px solid styles.$text-wh;
+        border-bottom-left-radius: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        & .img_of_img {
+            height: 598px;
+        }
+    }
+
+    & .signboard {
+        width: 230px;
+        position: absolute;
+        top: 150px;
+        right: 300px;
+        & .title_project {
+            margin: -1rem 0 1rem 0;
+            font-size: 28px;
+        }
+        & ul {
+            padding: 0 0 0 2rem;
+        }
+        & .icon_card {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            /* top: -65px;
+            left: -85px; */
+            top: -90px;
+            right: 35px;
+            /* bottom: -125px;
+            left: -50px; */
+            /* bottom: -100px;
+            right: -45px; */
+        }
+        & .author {
+            margin: 1rem 0 0;
+        }
+    }
+    .description_project {
+        width: 600px;
+        height: 180px;
+        //border: 1px solid;
+        position: absolute;
+        top: 400px;
+        left: 50px;
+    }
+    .readme {
+        position: absolute;
+        top: 200px;
+        right: 620px;
+        & .icon_readme {
+            width: 64px;
+            height: 64px;
+            margin: 0.5rem 0;
+            margin-left: 50%;
+            transform: translateX(100%);
+        }
+        & .icon_readme:hover{
+            border-radius: 50%;
+            box-shadow: 0px 1px 10px 1px styles.$text-wh;
+        }
+        & a {
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+        }
+    }
+    .btn_back {
+        text-decoration: none;
+        border: 2px solid;
+        border-radius: 15px;
+        padding: 0.5rem;
+        position: absolute;
+        top: 500px;
+        right: 665px;
+    }
+    .btn_back:hover {
+        box-shadow: 0px 1px 10px 1px styles.$text-wh;
+    }
+}

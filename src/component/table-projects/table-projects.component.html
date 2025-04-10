@@ -1,0 +1,92 @@
+
+<app-nav-router-outlet></app-nav-router-outlet>
+
+
+<div class="container_table">
+
+<!-- Tabella custom -->
+<!--     <div class="table-responsive d_flex_center debug_border">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th class="debug_border" scope="col">Nome</th>
+                    <th class="debug_border" scope="col">Descrizione</th>
+                    <th class="debug_border" scope="col">Anteprima</th>
+                    <th class="debug_border" scope="col">Autori</th>
+                    <th class="debug_border" scope="col">Tecnologie</th>
+                    <th class="debug_border" scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td class="debug_border" scope="row">Gelateria</td>
+                    <td class="debug_border">Vetrina di una gelateria, con descrizione dell'attività, inserimento dei
+                        prodotti e geolocalizzazione con Google Map</td>
+                    <td class="debug_border"><img src="../../assets/img/projects/gelateria.jpg" alt=""></td>
+                    <td class="debug_border">Pietro Paolo Puri</td>
+                    <td class="debug_border">Angular v18, Typescript</td>
+                    <td class="debug_border"><a target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/Pietro907/gelateria">https://github.com/Pietro907/gelateria</a>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td class="debug_border" scope="row">progetto 2</td>
+                    <td class="debug_border">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nam fuga
+                        optio quam dolor. Culpa ad nobis harum atque doloremque?</td>
+                    <td class="debug_border"><img src="https://picsum.photos/100/80" alt=""></td>
+                    <td class="debug_border">Pietro Paolo Puri</td>
+                    <td class="debug_border">Javascript, Python</td>
+                    <td class="debug_border"><a target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/Pietro907">https://github.com/Pietro907</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+
+    <!-- Tabella primeNG Single Column -->
+    <div class="mb-4">
+        <p-button type="button" icon="pi pi-chevron-left" (click)="prev()" [disabled]="isFirstPage()" text />
+        <p-button type="button" icon="pi pi-refresh" (click)="reset()" text />
+        <p-button type="button" icon="pi pi-chevron-right" (click)="next()" [disabled]="isLastPage()" text />
+    </div>
+    <div class="card" style="margin: 2rem;">
+        <p-table
+            [value]="repoList"
+            [paginator]="true"
+            [rows]="5"
+            [first]="first"
+            [showCurrentPageReport]="true"
+            [tableStyle]="{ 'min-width': '50rem' }"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+            (onPage)="pageChange($event)"
+            [rowsPerPageOptions]="[10, 25, 50]"
+        >
+            <ng-template #header>
+                <tr>
+                    <th style="width:25%">Name</th>
+                    <th style="width:25%">Country</th>
+                    <th style="width:25%">Company</th>
+                    <th style="width:25%">Representative</th>
+                </tr>
+            </ng-template>
+            <ng-template #body let-repo>
+                <tr>
+                    <td>{{ repo.id }}</td>
+                    <td>{{ repo.name }}</td>
+                    <td>{{ repo.language }}</td>
+                    <td><button pButton type="button" label="View README" (click)="showReadme(repo.name)"></button></td>
+                <!--     <td *ngIf="showReadme"> <pre>{{ selectedReadme }}</pre></td> -->
+                </tr>
+            </ng-template>
+            <ng-template #paginatorleft>
+                <p-button type="button" icon="pi pi-plus" text />
+            </ng-template>
+            <ng-template #paginatorright>
+                <p-button type="button" icon="pi pi-cloud" text />
+            </ng-template>
+        </p-table>
+    </div>
+
+
+
+</div>

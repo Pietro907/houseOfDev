@@ -1,0 +1,24 @@
+
+@use '../../../styles.scss';
+
+.card{
+    width: 500px;
+    height: 100%;
+}
+
+.card_spacing{
+    margin: 0.5rem;
+}
+
+.count_heart{
+    padding: 0 1rem;
+}
+
+.change_fill{
+    color: red;
+}
+.flex_end{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

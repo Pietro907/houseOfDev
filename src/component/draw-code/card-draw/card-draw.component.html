@@ -1,0 +1,21 @@
+<p-card class="card card_spacing">
+    <ng-template #header>
+        <img alt="Card" class="card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+    </ng-template>
+    <ng-template #title> titolo </ng-template>
+    <ng-template #subtitle> Card subtitle </ng-template>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+    </p>
+    <ng-template #footer>
+        <div class="flex_end">
+            <i class="pi pi-heart" (click)="incrementsHearts()"
+                [ngClass]="{'pi-heart-fill change_fill': isLike, 'pi-heart': !isLike}"></i>
+            <span class="count_heart">
+                {{count_hearts}}
+            </span>
+        </div>
+    </ng-template>
+</p-card>

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "primeicons/primeicons.css";
+
+/* #region palette */
+
+
+$bg-primary: #182E58;
+$bg-secondary: #07598D;
+$secondary-color: #b2172e;
+$secondary-color-shadow: #b2172e73;
+$third: #3d3e40;
+$text: #261B1D;
+$text-wh: #F2F3F4;
+$bg-wh-op: #f2f3f4a9;
+
+
+/* #endregion palette */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $text;
+}
+
+
+html {
+    background: linear-gradient(to left, #182E58, #07598D);
+    height: 100%;
+}
+
+@media screen and (max-width: 426px) {
+    html {
+        min-width: 320px;
+
+    }
+}

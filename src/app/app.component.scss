@@ -1,0 +1,74 @@
+@use "../styles.scss";
+
+header {
+    background: linear-gradient(to left, styles.$bg-primary, styles.$bg-secondary);
+    height: 150px;
+}
+main {
+    background: linear-gradient(to left, styles.$bg-primary, styles.$bg-secondary);
+    height: calc(100vh - 150px);
+}
+
+#nav_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    border-top: 2px solid styles.$text-wh;
+    border-bottom: 2px solid styles.$text-wh;
+
+    & .logo a img {
+        width: 150px;
+        height: 150px;
+        border-radius: 30%;
+        padding: 0.5rem;
+    }
+}
+.container_title_page {
+    position: relative;
+}
+.title_page {
+    transform: translateY(10%);
+}
+.title_page2 {
+    width: 100%;
+    color: styles.$text-wh;
+    position: absolute;
+    bottom: 50%;
+    left: 50.15%;
+    transform: translateX(-50%) translateY(50%);
+}
+.title_page,
+.title_page2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+/* #region media screen max 400px */
+@media screen and (max-width: 426px) {
+    html, body, header, main {
+        max-width: 426px;
+    }
+    header{
+        height: 80px;
+    }
+    #nav_bar {
+    
+        & .logo a img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .title_page,
+.title_page2 {
+    text-align: center;
+    font-size: 26px;
+}
+}
+
+/* #endregion media screen max 400px */
+
+/* #region debug */
+
+/* #endregion debug */

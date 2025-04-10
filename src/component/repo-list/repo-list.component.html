@@ -1,0 +1,15 @@
+<h2>Le Mie Repository GitHub</h2>
+<ul>
+  <li *ngFor="let repo of repositories">
+    <strong>{{ repo.name }}</strong> - ⭐ {{ repo.stargazers_count }} - 🍴 {{ repo.forks_count }}
+    <br />
+    <a [href]="repo.html_url" target="_blank">Vai alla Repository</a>
+    <button (click)="showReadme(repo.name)">Mostra README</button>
+  </li>
+</ul>
+
+<!-- Area per mostrare il README -->
+<div *ngIf="selectedReadme">
+  <h3>README</h3>
+  <pre>{{ selectedReadme }}</pre>
+</div>

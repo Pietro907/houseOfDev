@@ -1,0 +1,127 @@
+@use "../../styles.scss";
+
+#home {
+    height: 100%;
+}
+.container_title_greatings {
+    width: 100%;
+    padding: 4rem 0 4rem;
+    margin: 0rem 0 0;
+    position: relative;
+}
+.title_greatings,
+.title_greatings_2 {
+    text-align: center;
+    font-size: 60px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.title_greatings {
+    top: 50%;
+}
+.title_greatings_2 {
+    color: styles.$text-wh;
+    top: 45%;
+}
+#welcome {
+    margin: 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 25px;
+    width: 350px;
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+    & a:hover .hidden {
+        display: inline;
+        color: white;
+    }
+}
+.hidden {
+    color: transparent;
+}
+
+.img_welcome {
+    display: block;
+    width: 500px;
+    height: 415px;
+    border-bottom: 10px solid styles.$text-wh;
+    border-bottom-left-radius: 15px;
+    border-right: 10px solid styles.$secondary-color;
+    position: relative;
+    & .which_one {
+        color: styles.$text-wh;
+        position: absolute;
+        top: 62%;
+        left: 31%;
+        animation: pulse 2s infinite;
+    }
+    & .image_login {
+        width: 500px;
+        height: 425px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container_title_greatings {
+        max-width: 426px;
+    }
+    .title_greatings,
+    .title_greatings_2 {
+        font-size: 30px;
+    }
+    .title_greatings_2 {
+        top: 47.5%;
+    }
+    .text {
+        font-size: 12px;
+        max-width: 426px;
+        width: 140px;
+        padding: 6px 0;
+        margin: 0 0 0 -0.5rem;
+    }
+    .img_welcome {
+        display: block;
+        width: 180px;
+        height: 154px;
+        border-bottom: 5px solid styles.$text-wh;
+        border-bottom-left-radius: 15px;
+        border-right: 5px solid styles.$secondary-color;
+        & .which_one {
+            font-size: 5px;
+            top: 64%;
+            left: 32.5%;
+        }
+        & .image_login {
+            width: 180px;
+            height: 160px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../../styles.scss';
+
+.pages {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        padding: 1.5rem 0.5rem 0.5rem;
+        color: styles.$text-wh;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+.red {
+    color: styles.$secondary-color !important;
+    text-decoration: underline;
+}
+
+@media  screen and (max-width: 426px) {
+    
+    .pages {
+        height: 30px;
+        & a {
+            padding: 0.2rem 0.5rem;
+            font-size: 10px;
+        }
+    }
+
+}

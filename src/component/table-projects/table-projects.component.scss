@@ -1,0 +1,73 @@
+
+@use '../../styles.scss';
+
+
+.container_table{
+
+    & .title_page{
+        text-align: center;
+        padding: 1.5rem 0;
+        & h2 {
+            color: styles.$text-wh;
+        }
+    }
+    & .table-responsive{
+        margin: 1.5rem 3rem 0;
+        & tr {
+            background-color: styles.$text-wh;
+        }
+    }
+    & .table-responsive .table {
+        & thead tr th, tbody tr td{
+            color: styles.$secondary-color;
+            padding: 0.5rem 1rem;
+        }
+        & tr td:nth-child(1), tr td:nth-child(4), tr td:nth-child(6){
+            width: 150px;
+        }
+        & tr td:nth-child(2){
+            width: 450px;
+        }
+        & tr td:nth-child(5){
+            width: 250px;
+        }
+        & tr td:nth-child(6){
+            width: 350px;
+        }
+        td {
+            height: 100px;
+            text-align: center;
+            & img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+.d_flex_center {
+    display: flex;
+    justify-content: center;
+}
+.pages {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        padding: 1.5rem 0.5rem 0.5rem;
+        color: styles.$text-wh;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+/* #region debug */
+
+.debug_border{
+    border: 1px solid white;
+}
+
+/* #endregion debug */
+
+.red{color: styles.$secondary-color !important;}

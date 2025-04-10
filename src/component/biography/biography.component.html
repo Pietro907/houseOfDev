@@ -1,0 +1,83 @@
+<app-nav-router-outlet></app-nav-router-outlet>
+
+
+<div class="container_biography">
+
+    <!-- Nome, Titolo lavorativo, Alias progetti -->
+    <div class="title_biography">
+        <h1>Pietro Paolo Puri</h1>
+
+        <div class="sub_title">
+            <h2>Junior Developer</h2>
+
+            <!-- Immagine sotto iil titolo -->
+            <div class="astro_desk">
+                <img src="../../assets/img/astronauta/astronauta-scrivania.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Descrizione di me -->
+    <div class="description">
+        <p>Sono un ragazzo di 34 anni, nato a Roma con la <span>passione</span> e la <span>curiosità</span> per
+            l’informatica. Mi reputo una <span>persona solare</span>, con <span>spirito d’iniziativa</span> e incline a
+            <span>risolvere</span> sempre un problema. Amo praticare lo sport, stare all’aria aperta ed essere
+            <span>sempre pro-attivo</span>.
+            Ho frequentato <span>l’università</span> di Infermieristica che ritengo sia stata un bellissima esperienza
+            in cui mi sono arricchito sia a livello personale che professionale sviluppando delle competenze come
+            interfacciarmi con il cliente gestendo le sue richieste, rispetto delle scadenze e la gestione del lavoro
+            sotto pressione. Ho lavorato 10 anni nell’ambito della ristorazione dove per motivi di
+            turnazione e infelicità contrattuali, nonostante le <span>specializzazioni</span> e l’avanzamento di ruolo,
+            mi hanno portato a prendere la decisione di cambiare radicalmente la
+            mia vita cercando nuovi stimoli e studiando quello mi ha sempre affascinato fin da bambino. La scuola di
+            <span>Boolean</span> ha potuto realizzare il <span>sogno di diventare un programmatore</span> con delle basi
+            solide.
+
+            Mi sono rimesso in gioco seguendo seguendo questo corso e ho potuto certificarmi in <span>Developer
+                Full-Stack</span>.
+            Qui ho potuto apprendere diverse <span>tecnologie</span> partendo dalla creazione di semplici progetti con
+            solo
+            linguaggio di markup: <span>HTML</span> e <span>CSS</span> fino ad arrivare a progetti più complessi come
+            realizzare un campo minato in <span>Javascript</span>, la <span>creazione di un sito</span>, la
+            <span>creazione di un App Web</span>, la <span>creazione e gestione di un database</span>, gestione lato
+            <span>back-end</span> e lato <span>front-end</span> con l’utilizzo delle <span>API</span>, un
+            <span>form</span> per inviare e ricevere i messaggi, gestione delle richieste da parte del cliente, gestione
+            di dati in <span>RDBMS</span> rispetto della tempistica di consegna di un progetto. <br>
+
+            Inoltre autonomamente continuo a studiare e appprendere nuove tecnologie, di recente: <span>Tailwind</span>,
+            <span>Angular</span> e ho seguito un corso di <span>Java</span>. <br>
+
+            Attualmente mi sto esercitando con <span>Python</span>. <br><br>
+            Le competenze acquisite fino a oggi sono le elencate qui a sinistra della Descrizione,<br>
+
+            👀 <span>DAI UN'OCCHIATA ALLE SKILLS</span>. 👀 <br>
+
+        </p>
+
+    </div>
+
+    <div class="under_description">
+        <!-- Lista delle conoscenze -->
+        <div class="skill_list">
+
+            <div class="title_list">
+                <span>Skills:</span>
+            </div>
+            <div class="list_skills">
+                <ul>
+                    <li *ngFor="let tech of techArray">{{tech}}</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Immagine vicino le skills -->
+        <div class="astro_b_g">
+            <img src="../../assets/img/astronauta/astronauta-cartello-davanti-b&g.png" alt="">
+            <h3>Alias: <br> <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/Pietro907">Pietro907</a></h3>
+        </div>
+    </div>
+
+</div>
