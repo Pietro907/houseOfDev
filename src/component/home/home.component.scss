@@ -41,8 +41,8 @@
 .text {
     text-align: center;
     padding: 1rem 0;
-    font-size: 25px;
-    width: 350px;
+    font-size: 26px;
+    width: 400px;
     & a {
         text-decoration: none;
         color: white;
@@ -166,7 +166,41 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+    .container_title_greatings {
+        min-width: 426px;
+    }
+    .title_greatings,
+    .title_greatings_2 {
+        font-size: 46px;
+        width: 500px;
+    }
+    .title_greatings_2 {
+        top: 47%;
+    }
+    .text {
+        font-size: 26px;
+        max-width: 426px;
+        width: 300px;
+        padding: 6px 0;
+        margin: 0 0 0 -0.5rem;
+    }
+    .img_welcome {
+        display: block;
+        width: 350px;
+        height: 312px;
+        border-bottom: 9px solid styles.$text-wh;
+        border-bottom-left-radius: 15px;
+        border-right: 9px solid styles.$secondary-color;
+        & .which_one {
+            font-size: 11px;
+            top: 65.5%;
+            left: 31.5%;
+        }
+        & .image_login {
+            width: 350px;
+            height: 340px;
+        }
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
 }
