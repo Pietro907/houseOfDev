@@ -94,6 +94,20 @@ main {
         min-width: 768px;
         max-width: 1024px;
     }
+    header {
+        height: 130px;
+    }
+    #nav_bar {
+        & .logo a img {
+            width: 130px;
+            height: 130px;
+        }
+    }
+    .title_page,
+    .title_page2 {
+        text-align: center;
+        font-size: 40px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     header,
@@ -133,7 +147,7 @@ main {
 @media screen and (min-width: 3860px) {
     header,
     main {
-        min-width: px;
+        min-width: 3860px;
     }
 }
 /* #endregion media screen max 400px */

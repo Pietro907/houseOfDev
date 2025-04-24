@@ -5,8 +5,8 @@
 }
 .container_title_greatings {
     width: 100%;
-    padding: 4rem 0 4rem;
-    margin: 0rem 0 0;
+    padding: 4rem 0;
+    margin: 0 0;
     position: relative;
 }
 .title_greatings,
@@ -168,6 +168,8 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container_title_greatings {
         min-width: 426px;
+        padding: 1.5rem 0;
+        margin: 3rem 0;
     }
     .title_greatings,
     .title_greatings_2 {
@@ -175,12 +177,15 @@
         width: 500px;
     }
     .title_greatings_2 {
-        top: 47%;
+        top: 42%;
+    }
+    #welcome {
+        margin: 8rem 0 0;
     }
     .text {
-        font-size: 26px;
+        font-size: 28px;
         max-width: 426px;
-        width: 300px;
+        width: 350px;
         padding: 6px 0;
         margin: 0 0 0 -0.5rem;
     }
@@ -203,6 +208,46 @@
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container_title_greatings {
+        min-width: 426px;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    .title_greatings,
+    .title_greatings_2 {
+        font-size: 65px;
+        width: 700px;
+    }
+    .title_greatings_2 {
+        top: 39%;
+    }
+    #welcome {
+        margin: 5rem 0 0;
+    }
+    .text {
+        font-size: 34px;
+        max-width: 426px;
+        width: 500px;
+        padding: 6px 0;
+        margin: 0 0 0 -0.5rem;
+    }
+    .img_welcome {
+        display: block;
+        width: 450px;
+        height: 402px;
+        border-bottom: 12px solid styles.$text-wh;
+        border-bottom-left-radius: 15px;
+        border-right: 12px solid styles.$secondary-color;
+        & .which_one {
+            font-size: 14px;
+            top: 65.5%;
+            left: 31%;
+        }
+        & .image_login {
+            width: 448px;
+            height: 440px;
+        }
+    }  
 }
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
 }
