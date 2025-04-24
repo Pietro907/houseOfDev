@@ -90,7 +90,6 @@
 /* #region media screen */
 
 @media screen and (min-width: 320px) and (max-width: 426px) {
-
     .container_title_greatings {
         max-width: 426px;
     }
@@ -129,13 +128,58 @@
         }
     }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) {}
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {}
-@media screen and (min-width: 1440px) and (max-width: 1600px) {}
-@media screen and (min-width: 1600px) and (max-width: 1920px) {}
-@media screen and (min-width: 1920px) and (max-width: 2140px) {}
-@media screen and (min-width: 2140px) and (max-width: 3860px) {}
-@media screen and (min-width: 3860px) {}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .container_title_greatings {
+        min-width: 426px;
+    }
+    .title_greatings,
+    .title_greatings_2 {
+        font-size: 32px;
+        width: 350px;
+    }
+    .title_greatings_2 {
+        top: 47%;
+    }
+    .text {
+        font-size: 18px;
+        max-width: 426px;
+        width: 200px;
+        padding: 6px 0;
+        margin: 0 0 0 -0.5rem;
+    }
+    .img_welcome {
+        display: block;
+        width: 222px;
+        height: 190px;
+        border-bottom: 7px solid styles.$text-wh;
+        border-bottom-left-radius: 15px;
+        border-right: 7px solid styles.$secondary-color;
+        & .which_one {
+            font-size: 7px;
+            top: 64%;
+            left: 31%;
+        }
+        & .image_login {
+            width: 220px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+}
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+}
+@media screen and (min-width: 1920px) and (max-width: 2140px) {
+}
+@media screen and (min-width: 2140px) and (max-width: 3860px) {
+}
+@media screen and (min-width: 3860px) {
+}
 
 /* #endregion media screen */
