@@ -115,12 +115,20 @@ main {
         min-width: 1024px;
         max-width: 1440px;
     }
+    .title_page,
+.title_page2{
+    font-size: 36px;
+}
 }
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
     header,
     main {
         min-width: 1440px;
         max-width: 1600px;
+    }
+    .title_page,
+    .title_page2 {
+        font-size: 58px;
     }
 }
 @media screen and (min-width: 1600px) and (max-width: 1920px) {

@@ -51,12 +51,12 @@
     width: 300px;
     & .title_list {
         font-size: 25px;
-        border: 1px solid styles.$bg-wh-op;
+        border: 0px solid styles.$bg-wh-op;
         box-shadow: 0 -5px 5px 5px styles.$bg-wh-op;
         background: styles.$bg-wh-op;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        padding: 0 0.5rem 0.5rem;
+        padding: 0 0.5rem 0.75rem;
         & span {
             color: styles.$secondary-color;
             text-decoration: underline;
